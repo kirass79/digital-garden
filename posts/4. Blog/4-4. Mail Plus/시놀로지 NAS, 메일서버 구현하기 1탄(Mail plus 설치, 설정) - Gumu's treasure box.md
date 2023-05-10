@@ -1,0 +1,42 @@
+- ---
+- page-title: "시놀로지 NAS, 메일서버 구현하기 1탄(Mail plus 설치, 설정) - Gumu's treasure box"
+- url: https://gumu.kr/blog/165/mailplus1/
+- date: "2023-04-26 09:36:06"
+- ---
+- 다들 나만의 이메일 주소를 가지고 싶다는 상상은 한번씩 해보지 않을까? @naver.com이나 @daum.net, @gmail.com은 누구나 쉽게 가질 수 있지만 @fire.com같은 이메일 주소는 쉽게 가질 수 없는 메일 주소임에 틀림 없다.
+- Synology NAS에는 Mail Plus Server와 Mail Plus라는 패키지가 존재한다. 이 패키지들이 메일 서버를 쉽게 운영하도록 도와준다. 우선, 자체 앱을 사용하기 위해서는 준비물이 몇 가지 필요하다.
+- **준비물:** Synology NAS, Synology 계정, 본인이 소유하고 있는 도메인
+- **포트포워딩:** 143포트, 80포트, 25포트, 993포트, 465포트, 587포트
+- **과정요약:** (1) 패키지 설치 (2) 패키지 설정 (3) 도메인 설정 (4) 메일 클라이언트에 적용
+- **(1) 패키지 설치**
+- 패키지 설치는 다른 패키지 설치와 마찬가지로 NAS의 바탕화면 혹은 메인메뉴에서 패키지센터를 통해 설치할 수 있다. 가장 쉬운 단계  
+- Mail Plus를 설치하면 Mail Plus Server가 자동으로 설치된다.
+- **(2) 패키지 설정**
+- 패키지 설정부터 살짝 만만치가 않다. 잘 따라해보자.
+- ![](https://gumu.kr/wp-content/uploads/2019/06/image.png)
+- 기본 SMTP 설정 구성 화면
+- 일단, 처음 서버를 시행하면 해당 창이 뜨게 된다. 계정유형, 네트워크 인터페이스, 볼륨은 자동으로 선택되어 온다. 메일서버를 만들면서 차지하는 데이터를 어디에 저장할지는 볼륨 설정을 통해 변경할 수 있다. 메일 서버 구축이 끝나면 해당 볼륨에 자동으로 MailPlus라는 공유폴더가 생성된다.  
+- **도메인 이름과 호스트 이름에 본인이 소유한 도메인을 입력한다.** 예를 들어 본인이 소유한 도메인이 fire.com이라고 하면 둘 다 fire.com으로 입력해줘도 무방하다.
+- *(FQDN이란 Fully Qualified Domain Name의 약자로 fire.com이라는 도메인을 소유하고 있다면 mail.fire.com, drive.fire.com, file.fire.com 등의 서브 도메인 네임 전체를 뜻한다. 만약, 메일 서버를 서브 도메인에 설치하고 싶다면 FQDN을 원하는 서브 도메인에 맞게 적어주면 된다. 그렇지만 여기에서는 소유하고 있는 도메인과 FQDN을 모두 fire.com으로 통일하도록 한다.)*
+- 다음 버튼을 누르면 다음과 같은 화면을 볼 수 있다.  
+- (일단, 필자의 경우에는 이미 서버 구축이 끝난 상태라는 점을 감안해서 봐주었으면 한다. 각 탭별 현재 설정은 다음과 같다. )
+- ![](https://gumu.kr/wp-content/uploads/2019/06/image-1-1024x591.png)
+- 서버관리탭
+- ![](https://gumu.kr/wp-content/uploads/2019/07/image-6-1024x592.png)
+- 도메인 탭
+- ![](https://gumu.kr/wp-content/uploads/2019/07/image-4-1024x586.png)
+- 메일 배달 탭
+- ![](https://gumu.kr/wp-content/uploads/2019/07/image-7-1024x589.png)
+- ![](https://gumu.kr/wp-content/uploads/2019/07/image-8-1024x590.png)
+- 서비스탭 – SMTP모두 활성화, IMAP/POP3 모두 활성화 상태
+- 그 다음에는 계정 활성화를 시켜줘야 한다. **계정탭**으로 이동한 후 활성화할 계정을 활성화시킨다.
+- ![](https://gumu.kr/wp-content/uploads/2019/07/image-3-1024x590.png)
+- 계정 탭, 계정 활성화
+- **계정 활성화는 무료로 최대 5개**, 그 이후에는 라이센스 비용을 내야 한다. 어차피 기업에서 사용할 것이 아니라면 5개를 넘어서 메일을 사용할 일이 그렇게 많지는 않을 것이라 생각한다.
+- 기타로 보안 탭이 있다. 보안탭에서는 각종 스팸필터 설정, 안티바이러스 설정 등이 있는데 해당 설정은 취향껏 설정해주시면 되겠다.
+- (3)도메인 설정과 (4)메일 클라이언트에 적용은 다음 포스팅에서 자세히 다루도록 한다.
+- ### **시리즈 목록**
+- [시놀로지 NAS, 메일서버 구현하기 1탄(Mail plus 설치, 설정)](https://gumu.kr/blog/165/mailplus1/)  
+- [시놀로지 NAS, 메일서버 구현하기 2탄(도메인DNS, SPF, DKIM, DMARC 설정)](https://gumu.kr/blog/185/mailplus2/)  
+- [시놀로지 NAS, 메일서버 구현하기 3탄(인증서, 수발신 테스트)](https://gumu.kr/blog/218/mailplus3/)  
+- [시놀로지 NAS, 메일서버 구현하기 4탄(스마트폰 메일어플 연동)](https://gumu.kr/blog/241/%ec%8b%9c%eb%86%80%eb%a1%9c%ec%a7%80-nas-%eb%a9%94%ec%9d%bc%ec%84%9c%eb%b2%84-%ea%b5%ac%ed%98%84%ed%95%98%ea%b8%b0-4%ed%83%84%ec%8a%a4%eb%a7%88%ed%8a%b8%ed%8f%b0-%eb%a9%94%ec%9d%bc%ec%96%b4%ed%94%8c/)

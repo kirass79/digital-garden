@@ -1,0 +1,17 @@
+- The Smoothie Diet: 21 Day Rapid Weight Loss Program
+	- https://f8ce36q4ufrcvh7h08ykp1o915.hop.clickbank.net
+	- https://go.smoothiediet.com/affiliates/
+- SLIMCRYSTAL - Unique Offer, 50-60%, up to $300/Sale & $3.9 EPC
+	- https://60c9bgpaggxhxp0hv8yb1r5kgp.hop.clickbank.net
+	- https://slimcrystal.com/aff
+- Custom Keto Diet - Updated For 2023 - AOV Monster! (Promote & Profit!)
+	- https://742a3hkcuqqppfe0w12ldv6o31.hop.clickbank.net
+	- https://affiliates.ckd.media/signup
+- Okinawa Flat Belly Tonic
+	- https://1d298cy1iizdpm61heqhx07s80.hop.clickbank.net
+	- https://okinawatonic.co/affiliates/
+- EAT STOP EAT And More Brad Pilon Bestsellers
+	- https://1b317go7ugtiylb4iitgtjf1ww.hop.clickbank.net
+	- https://clkbooks.com/affiliates/
+### 기타 상용구
+- Click link in bio for your healthy Diet
