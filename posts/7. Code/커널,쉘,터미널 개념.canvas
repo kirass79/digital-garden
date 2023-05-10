@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"type":"text","text":"shell(껍데기라는 의미)","id":"25b85f24bd14481d","x":-68,"y":-380,"width":250,"height":60,"color":"1"},
+		{"type":"text","text":"커널","id":"66e9c76ef126c2e4","x":340,"y":-20,"width":250,"height":60,"color":"1"},
+		{"type":"text","text":"터미널(맨끝지점이라는 의미)","id":"9713c044818ee753","x":-560,"y":-320,"width":240,"height":63,"color":"1"},
+		{"type":"text","text":"사용자","id":"c0aea7bafd70debe","x":-720,"y":40,"width":100,"height":60},
+		{"type":"text","text":"하드웨어","id":"8dd3d47fb9904ff5","x":-180,"y":-50,"width":140,"height":60},
+		{"type":"text","text":"[[콘솔|콘솔]]","id":"c152687e7a848634","x":-731,"y":-100,"width":111,"height":60}
+	],
+	"edges":[
+		{"id":"c6516ea13b2a5b67","fromNode":"c0aea7bafd70debe","fromSide":"top","toNode":"9713c044818ee753","toSide":"left","label":"명령"},
+		{"id":"1c570c5215f15a4d","fromNode":"9713c044818ee753","fromSide":"right","toNode":"25b85f24bd14481d","toSide":"left","label":"명령"},
+		{"id":"56dca33e90ce241b","fromNode":"25b85f24bd14481d","fromSide":"right","toNode":"66e9c76ef126c2e4","toSide":"top","label":"명령"},
+		{"id":"29c027a6c7eab426","fromNode":"66e9c76ef126c2e4","fromSide":"bottom","toNode":"8dd3d47fb9904ff5","toSide":"right"}
+	]
+}
